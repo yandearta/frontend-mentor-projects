@@ -11,13 +11,13 @@ body {
     background-color: hsl(212, 45%, 89%);
     min-height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
     font-size: 15px;
 }
 
 .container {
     max-width: 20rem;
-    margin: 0 auto;
 }
 
 .card {

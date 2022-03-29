@@ -38,6 +38,7 @@ body {
 }
 
 .card__title {
+    font-size: 1.3rem;
     color: hsl(218, 44%, 22%);
     margin-bottom: 1em;
 }

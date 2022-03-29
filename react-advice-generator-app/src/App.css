@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    background-color: hsl(218, 23%, 16%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    background-color: hsl(217, 19%, 24%);
+    margin: 0 1em;
+    padding: 2em 1em;
+    border-radius: 0.5rem;
+    position: relative;
+    max-width: 30rem;
+}
+
+.card__id {
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 5px;
+    font-size: 0.8rem;
+}
+
+.card__title {
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+    padding: 1em 0;
+}
+
+.card__button {
+    position: absolute;
+    background-color: hsl(150, 100%, 66%);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: box-shadow 100ms ease-in-out;
+    cursor: pointer;
+}
+
+.card__button:active {
+    box-shadow: 0 0 1rem 5px hsla(150, 100%, 66%, 0.623);
+}
+
+.card__image {
+    padding-top: 1em;
+    padding-bottom: 2em;
+    width: 100%;
+}
+
+.card__image--desktop {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .card__image--desktop {
+        display: block;
+    }
+
+    .card__image--mobile {
+        display: none;
+    }
+}
